@@ -9,7 +9,7 @@ const breadcrumbList = currentUrlPath.split("/").slice(1);
 // if breadcrumb is Home > Posts > 1 <etc>
 // replace Posts with Posts (page number)
 if (breadcrumbList[0] === "posts") {
-  breadcrumbList.splice(0, 2, `Posts (page ${breadcrumbList[1] || 1})`);
+  breadcrumbList.splice(0, 2, "posts");
 }
 
 // if breadcrumb is Home > Tags > [tag] > [page] <etc>
@@ -23,7 +23,7 @@ if (breadcrumbList[0] === "tags" && !isNaN(Number(breadcrumbList[2]))) {
 }
 ---
 
-<nav class="app-layout mt-8 mb-1" aria-label="breadcrumb">
+<nav class="app-layout mt-8 mb-8" aria-label="breadcrumb">
   <ul
     class="font-light [&>li]:inline [&>li:not(:last-child)>a]:hover:opacity-100"
   >

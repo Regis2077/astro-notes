@@ -1,17 +1,32 @@
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: 'Cheltenham';
+  src: url('https://g1.nyt.com/fonts/family/cheltenham/cheltenham-normal-700.530cfb72378419eedb60da7e266ad5f1.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Imperial';
+  src: url("https://g1.nyt.com/fonts/family/imperial/imperial-normal-400.6131cd77b6e216c7693ed925f4309ffc.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-cheltenham: 'Cheltenham', Georgia, serif;
+  --font-imperial: 'Imperial', Georgia, serif;
+}
+
 @layer base {
+
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
     @apply prose;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    th {
-      @apply mb-3 text-foreground;
-    }
 
     h3 {
       @apply italic;
@@ -52,6 +67,7 @@
     }
 
     table {
+
       th,
       td {
         @apply border border-border p-2;
@@ -106,12 +122,15 @@
     .line.diff.add {
       @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
     }
+
     .line.diff.remove {
       @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
     }
+
     .line.highlighted {
       @apply inline-block w-full bg-slate-400/20;
     }
+
     .highlighted-word {
       @apply rounded-sm border border-border px-0.5 py-px;
     }
