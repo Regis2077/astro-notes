@@ -1,11 +1,11 @@
 export const SITE = {
-  website: "",
+  website: "https://gabrielregis.com",
   author: "Gabriel Regis",
   profile: "https://gabrielregis.com",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "Blog",
+  title: "MindCache",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: false,
+  lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000,
@@ -17,7 +17,7 @@ export const SITE = {
     url: "https://github.com/satnaing/astro-paper/edit/main/",
   },
   dynamicOgImage: true,
-  dir: "ltr", 
+  dir: "ltr",
   lang: "pt",
   timezone: "America/Sao_Paulo",
 } as const;

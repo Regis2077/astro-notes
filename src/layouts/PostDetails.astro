@@ -77,9 +77,9 @@ const allPosts = posts.map(({ data: { title }, id, filePath }) => ({
 
 const currentPostIndex = allPosts.findIndex(a => a.id === post.id);
 
-const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
-const nextPost =
-  currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
+// const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
+// const nextPost =
+//   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
 ---
 
 <Layout {...layoutProps}>
@@ -90,13 +90,14 @@ const nextPost =
     class:list={["app-layout pb-12", { "mt-8": !SITE.showBackButton }]}
     data-pagefind-body
   >
-  <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+    <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
     <h1
       transition:name={slugifyStr(title.replaceAll(".", "-"))}
       class="inline-block text-2xl font-bold text-accent sm:text-3xl"
     >
       {title}
     </h1>
+
     <div class="my-2 flex items-center gap-2">
       <span
         aria-hidden="true"
@@ -124,12 +125,12 @@ const nextPost =
 
     <BackToTopButton />
 
-    <ShareLinks />
+    <!-- <ShareLinks />
 
-    <hr class="my-6 border-dashed" />
+    <hr class="my-6 border-dashed" /> -->
 
     <!-- Previous/Next Post Buttons -->
-    <div data-pagefind-ignore class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <!-- <div data-pagefind-ignore class="grid grid-cols-1 gap-6 sm:grid-cols-2">
       {
         prevPost && (
           <a
@@ -158,7 +159,7 @@ const nextPost =
           </a>
         )
       }
-    </div>
+    </div> -->
   </main>
   <Footer />
 </Layout>
