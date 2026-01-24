@@ -62,6 +62,12 @@ html[data-theme="dark"] {
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
+  blockquote p::before {
+    display: none;
+  }
+  blockquote p::after{
+    display: none;
+  }
 }
 
 @utility max-w-app {

@@ -16,7 +16,7 @@ const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const recentPosts = sortedPosts.filter(({ data }) => !data.draft);
 ---
 
 <Layout>
@@ -40,13 +40,13 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         />
         <span class="sr-only">RSS Feed</span>
       </a>
-
+<!-- 
       <p>
         AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
         blog theme. This theme follows best practices and provides accessibility
         out of the box. Light and dark mode are supported by default. Moreover,
         additional color schemes can also be configured.
-      </p>
+      </p> -->
       <!-- <p class="mt-2">
         Read the blog posts or check
         <LinkButton
@@ -75,7 +75,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             { "border-b border-border": recentPosts.length > 0 },
           ]}
         >
-          <h2 class="text-2xl font-semibold tracking-wide">featuredos</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Favoritos</h2>
           <ul>
             {featuredPosts.map(data => (
               <Card variant="h3" {...data} />
