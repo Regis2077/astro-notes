@@ -3,7 +3,7 @@ export const SITE = {
   author: "Gabriel Regis",
   profile: "https://gabrielregis.com",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "MindNotes",
+  title: "Notes",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: false,
   postPerIndex: 10,
