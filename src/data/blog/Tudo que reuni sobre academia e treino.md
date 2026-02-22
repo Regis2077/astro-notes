@@ -8,7 +8,7 @@ featured: true
 draft: false
 tags:
   - academia
-description: O que pretendo comer para acompanhar os treinos
+description: Informações sobre treino e hipertrofia baseadas na ciências
 ---
 Desde que entrei na academia sempre busco as mesmas informações de sempre. Melhor treino, quantidade de repetições, melhor forma de hipetrofia e etc. Vou um tempo, paro de ir, esqueço, volto a treinar, procuro as mesmas coisas e o ciclo se repete. Aqui vai tudo que já salvei no computador nos momentos que voltei a treinar.
 
