@@ -2,13 +2,12 @@
 author: Gabriel Regis
 pubDatetime: 2026-02-18T12:13:24Z
 modDatetime: 2026-02-18T12:13:24Z
-title: Dieta Hipercalórica
+title: Tudo que reuni sobre academia e treino
 slug:
 featured: true
 draft: false
 tags:
   - academia
-  - dieta
 description: O que pretendo comer para acompanhar os treinos
 ---
 Desde que entrei na academia sempre busco as mesmas informações de sempre. Melhor treino, quantidade de repetições, melhor forma de hipetrofia e etc. Vou um tempo, paro de ir, esqueço, volto a treinar, procuro as mesmas coisas e o ciclo se repete. Aqui vai tudo que já salvei no computador nos momentos que voltei a treinar.
