@@ -5,7 +5,7 @@ modDatetime: 2026-01-23T12:13:24Z
 title: Receita Carbonara
 description: Minha receita definitiva de Carbonara, vi no vídeo da Paola
 draft: false
-featured: true
+featured: false
 tags:
   - gastronomia
 ---

@@ -4,7 +4,7 @@ pubDatetime: 2026-02-18T12:13:24Z
 modDatetime: 2026-02-18T12:13:24Z
 title: Tudo que reuni sobre academia e treino
 slug:
-featured: true
+featured: false
 draft: false
 tags:
   - academia
