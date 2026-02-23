@@ -7,6 +7,8 @@ slug:
 featured: true
 draft: false
 tags:
+  - saúde
+  - academia
 description: Exercícios variados para uma melhor saúde motora e articular.
 ---
 > Baseado no livro Você foi feito pra se mover
